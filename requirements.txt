@@ -1,0 +1,3 @@
+ads-log-daemon==0.1.1
+ads-async==0.1.2
+python-ldap==3.3.1
