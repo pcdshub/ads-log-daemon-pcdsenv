@@ -5,7 +5,7 @@ PIP := $(PYTHON) -m pip
 
 initialize:
 	if [ ! -d "$(ENV_NAME)" ]; then \
-		python -m venv $(ENV_NAME); \
+		python3 -m venv $(ENV_NAME); \
 	fi
 
 	$(PIP) install --upgrade pip
