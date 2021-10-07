@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source /opt/rh/python-38/enable
+
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 ENV_NAME=ads-log-daemon-env
 PYTHON=${SCRIPT_DIR}/${ENV_NAME}/bin/python
