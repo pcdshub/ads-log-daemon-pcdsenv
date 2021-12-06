@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source /opt/rh/python-38/enable
+source /opt/rh/rh-python38/enable
 
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 ENV_NAME=ads-log-daemon-env
@@ -12,7 +12,7 @@ export LOG_DAEMON_ROUTE_NAME=ads-log-daemon
 
 # LOG_DAEMON_HOST_NAME=
 export LOG_DAEMON_LDAP_SEARCH_BASE=ou=Subnets,dc=reg,o=slac
-export LOG_DAEMON_LDAP_SERVER=ldap://psldap1.pcdsn
+export LOG_DAEMON_LDAP_SERVER=ldap://psldap2.pcdsn
 export LOG_DAEMON_HOST_PREFIXES=plc-*,bhc-*
 export LOG_DAEMON_SEARCH_PERIOD=900
 
